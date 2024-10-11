@@ -14,7 +14,8 @@ body{
     border-radius: 20px;
     color: #fff;
     margin: 100px auto;
-    padding: 50px 20px;  
+    padding: 50px 20px;
+    height: auto;  
 }
 .upper{
     display: flex;
@@ -103,4 +104,45 @@ body{
 .wind img{
     width: 60px;
     margin-right:20px
+}
+
+@media (max-width:530px){
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        max-width: 450px;
+    }
+    .upper input{
+        width: 239px;
+    }
+    .upper{
+        gap: 0;
+    }
+    #bara{
+        font-size: 30px;
+    }
+    
+    #chota{
+        font-size: 15px;
+        margin: 0;
+    }
+    .humidity img{
+        width: 40px;
+        margin-right:10px
+    }
+    .wind img{
+        width: 40px;
+        margin-right:10px
+    }
+    .temp h1{
+        font-size: 54px;
+    }
+    .temp h2{
+        font-size: 40px;
+        font-weight: 400;
+    }
 }

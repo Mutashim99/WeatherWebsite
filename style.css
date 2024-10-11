@@ -2,4 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: black;
+
+}
+.card{
+    max-width: 500px;
+    background: linear-gradient(135deg , #00feba , #5b548a);
+    border-radius: 20px;
+    color: #fff;
+    margin: 100px auto;
+    padding: 50px 20px;  
+}
+.upper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.upper input{
+    background-color: #ebfffc;
+    border: none;
+    outline: none;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+    width: 330px;
+    margin-right: 10px;
+}
+.upper button img{
+    width: 30px;
+}
+.upper button{
+    background-color: #ebfffc;
+    border: none;
+    outline: none;
+    color: #555;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.img{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.temp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.temp h1{
+    font-size: 64px;
+}
+.temp h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 60px;
+}
+.humidity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wind{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bara{
+    font-size: 35px;
+}
+
+#chota{
+    font-size: 17px;
+    margin: 0;
+}
+.humidity img{
+    width: 60px;
+    margin-right:20px
+}
+.wind img{
+    width: 60px;
+    margin-right:20px
 }

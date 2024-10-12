@@ -103,8 +103,7 @@ function showData(data){
             imageIcon.src = `images/cloudy.svg`;
             cardforbgchange.style.background = "linear-gradient(135deg, #616161, #2c3e50)"; 
         }
-
+        imgDiv.appendChild(imageIcon)
     
         
 }
-imgDiv.appendChild(imageIcon)

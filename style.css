@@ -115,6 +115,7 @@ body{
     }
     .card{
         max-width: 450px;
+       
     }
     .upper input{
         width: 239px;
@@ -128,6 +129,48 @@ body{
     
     #chota{
         font-size: 15px;
+        margin: 0;
+    }
+    .humidity img{
+        width: 40px;
+        margin-right:10px
+    }
+    .wind img{
+        width: 40px;
+        margin-right:10px
+    }
+    .temp h1{
+        font-size: 54px;
+    }
+    .temp h2{
+        font-size: 40px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width:400px){
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        max-width:390px;
+        margin: 50px;
+    }
+    .upper input{
+        width: 230px;
+    }
+    .upper{
+        gap: 0;
+    }
+    #bara{
+        font-size: 25px;
+    }
+    
+    #chota{
+        font-size: 12px;
         margin: 0;
     }
     .humidity img{

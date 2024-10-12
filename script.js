@@ -8,7 +8,7 @@ const clouds = document.querySelector(".cloudText")
 const feelslike = document.querySelector(".feelslikeText")
 const errormsg = document.querySelector(".errormsg")
 const errormsgp = document.querySelector(".errormsg p")
-const imageIcon = document.querySelector(".img img")
+const imgDiv = document.querySelector(".img")
 const cardforbgchange = document.querySelector(".card") 
 
 function getUserLocation(){
@@ -58,7 +58,7 @@ searchButton.addEventListener("click" , (e)=>{
 inputfield.addEventListener("focus", (e)=>{
     errormsg.style.display = "none"
 })
-
+const imageIcon = document.createElement("img")
 function showData(data){
     temperature.innerHTML = `${Math.floor(data.main.temp)}&deg;c`
         cityName.innerText = data.name
@@ -67,6 +67,7 @@ function showData(data){
         clouds.innerText = data.clouds.all + "%"
         feelslike.innerHTML = Math.floor(data.main.feels_like) + "&deg;c"
         console.log(data.weather[0].main.toLowerCase());
+        
 
         if (data.weather[0].main.toLowerCase() === "clear") {
             imageIcon.src = `images/clear.svg`;
@@ -102,5 +103,8 @@ function showData(data){
             imageIcon.src = `images/cloudy.svg`;
             cardforbgchange.style.background = "linear-gradient(135deg, #616161, #2c3e50)"; 
         }
+
+    
         
 }
+imgDiv.appendChild(imageIcon)

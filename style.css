@@ -13,9 +13,10 @@ body{
     background: linear-gradient(135deg , #00feba , #5b548a);
     border-radius: 20px;
     color: #fff;
-    margin: 100px auto;
+    margin: 50px auto;
     padding: 50px 20px;
-    height: auto;  
+    height: auto; 
+    transition: all 0.2s ease-in-out; 
 }
 .upper{
     display: flex;
@@ -58,25 +59,31 @@ body{
     justify-content: center;
     align-items: center;
 }
+.img img{
+    height: 300px;
+    width: 300px;
+}
 .temp{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 48px;
 }
 .temp h1{
-    font-size: 64px;
+    font-size: 90px;
 }
 .temp h2{
     font-size: 50px;
     font-weight: 400;
+    margin-bottom: 40px;
 }
 .details{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 40px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .humidity{
     display: flex;
@@ -88,7 +95,17 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+.clouds{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feels-like{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
 #bara{
     font-size: 35px;
 }
@@ -104,6 +121,17 @@ body{
 .wind img{
     width: 60px;
     margin-right:20px
+}
+.clouds img{
+    width: 60px;
+    margin-right:20px;
+    filter: invert();
+}
+
+.feels-like img{
+    width: 60px;
+    margin-right:20px;
+    filter: invert();
 }
 
 @media (max-width:530px){

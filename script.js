@@ -31,7 +31,6 @@ function getCurrentCityData(lati,longi){
     .then((res)=> res.json())
     .then((data)=>{
         showData(data)
-        console.log(data);
     })
 }
 searchButton.addEventListener("click" , (e)=>{

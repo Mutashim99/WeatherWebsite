@@ -13,7 +13,7 @@ body{
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     border-radius: 20px;
     color: #fff;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 50px 20px;
     height: auto; 
     transition: all 1s ease-in-out; 
@@ -64,7 +64,6 @@ body{
     width: 250px;
     
 }
-
 .temp{
     display: flex;
     align-items: center;

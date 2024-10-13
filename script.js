@@ -99,8 +99,10 @@ function showData(data){
             imageIcon.src = `images/tornado.svg`;
             cardforbgchange.style.background = "linear-gradient(135deg, #0f2027, #203a43)";
         } else if (data.weather[0].main.toLowerCase() === "clouds") {
-            imageIcon.src = `images/cloudy.svg`;
+            imageIcon.src = `F:\WeatherWebsite\images\cloudy.svg`;
             cardforbgchange.style.background = "linear-gradient(135deg, #616161, #2c3e50)"; 
+        }else{
+            imageIcon.src = `F:\WeatherWebsite\images\cloudy.svg`;
         }
         imgDiv.appendChild(imageIcon)
     
